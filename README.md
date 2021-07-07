@@ -1,5 +1,5 @@
 # Team-Builder
-  # Table of Contents:
+  ## Table of Contents:
   * [Title](#title)
   * [Description](#description)
   * [How to install](#installation)
