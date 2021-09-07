@@ -1,5 +1,5 @@
 # Team-Builder
-  # Table of Contents:
+  ## Table of Contents:
   * [Title](#title)
   * [Description](#description)
   * [How to install](#installation)
@@ -11,7 +11,7 @@
   * [GitHub](#github)
 
 ## Description 
-AS a manager, I want to generate a webpage that displays my team's basic info so that I have quick access to their emails and GitHub profiles
+As a web developer, I want to generate a webpage that displays my team's basic info so that I have quick access to their emails and GitHub profiles
 
 ## How to install 
  
