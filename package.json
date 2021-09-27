@@ -1,0 +1,26 @@
+{
+    "name": "team-builder",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test":  "jest --verbose test/*"
+    },
+    "repository":{
+        "type": "git",
+        "url": "git+https://github.com/BA1bers/TeamBuilder.git"
+    },
+    "author": "Brent Albers",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BA1bers/TeamBuilder/issues"
+    },
+    "homepage": "https://github.com/BA1bers/TeamBuilder#readme",
+    "dependencies": {
+        "inquirer": "^8.1.1",
+        "jest": "^27.0.6"
+    }
+}
