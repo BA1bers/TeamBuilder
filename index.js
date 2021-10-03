@@ -231,14 +231,14 @@ function addEmployees() {
             const employeeHTML =
                 initHtml();
 
-            const writeHTML = createHtml(employeeHTML);
+            const writeHTML = generateHtmlTemplate(employeeHTML);
             writeFile("./dist/index.html", writeHTML);
             fs.copyFileSync("./dist/style.css");
         }
     });
 }
 
-function createHtml(employees) {
+function generateHtmlTemplate(employees) {
     let teamMemberCards = "";
     employees.forEach(employee => {
         let title = "";
