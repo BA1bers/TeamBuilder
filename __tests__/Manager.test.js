@@ -2,7 +2,7 @@ const { expect } = require('@jest/globals');
 const Manager = require('../lib/Manager')
 
 test('creates manager object', () => {
-    const manager = new Manager('bob', 14524, 'bob.rocks@gmail.com');
+    const manager = new Manager('carl', 1, 'carl.wheezer@gmail.com');
     expect(typeof manager).toBe('object');
 
     expect(manager.name).toEqual(expect.any(String));
@@ -10,12 +10,30 @@ test('creates manager object', () => {
     expect(manager.email).toEqual(expect.any(String));
 });
 
-test("add name amd getName method will return an manager's name", () => {
-    const manager = new Manager('bob', 14524, 'bob.rocks@gmail.com');
+test("manager's name", () => {
+    const manager = new Manager('carl', 1, 'carl.wheezer@gmail.com');
     expect(manager.getName()).toEqual(expect.any(String));
 });
 
-test("add id and getId method will return an manager's id", () => {
-    const manager = new Manager('bob', 14724, 'bob.rocks@gmail.com')
+test("manager's id", () => {
+    const manager = new Manager('carl', 1, 'carl.wheezer@gmail.com')
     expect(manager.getId()).toEqual(expect.any(String));
+})
+
+test("managers's email", () => {
+    const email = 'carl.wheezer@gmail.com';    
+    const manager = new Manager('carl', 1, email);
+
+    expect(manager.getEmail()).toEqual(email);
+});
+
+test("manager's office number", () => {
+    const manager = new Manager('carl', 1, 'carl.wheezer@gmail.com');
+    expect(manager.getOfficeNumber()).toEqual(expect.any(Number));
+});
+
+test("manager's role", () => {
+    const testValue = "Manager";
+    const manager = new Manager('carl', 1, 'carl.wheezer@gmail.com');
+    expect(manager.getRole()).toEqual(testValue);
 })
