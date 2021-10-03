@@ -26,7 +26,30 @@
                 <div class="card mx-auto mb-3" style="width: 20rem">
                     <h3 class="card-header">Carl Wheezer</h3>
                     <h4>Manager</h4>
+                    <p class="id">ID 1</p>
+                    <p class ="email">Email carl.wheezer@gmail.com</p>
+                    <p class="officeNum">Office Number: ${manager.officeNumber}</p>
                 </div>
+            </div>
+            <div class="col-6">
+                <div class="card mx-auto mb-3" style="width: 20rem">
+                    <h3 class="card-header">Joe Jenkins</h3>
+                    <h4>Engineer</h4>
+                    <p class="id">ID 3</p>
+                    <p class ="email">Email joe.jenkins@gmail.com</p>
+                    <p class="github">GitHub https://github.com/joejenks</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card mx-auto mb-3" style="width: 20rem">
+                    <h3 class="card-header">${intern.name}</h3>
+                    <h4>Intern</h4>
+                    <p class="id">ID ${intern.id}</p>
+                    <p class ="email">Email <a href="${intern.email}'>${intern.email}</a></p>
+                    <p class="school">School ${intern.school}</p>
+                </div>
+            </div>
             </div>
 
         </div>

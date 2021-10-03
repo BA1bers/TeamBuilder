@@ -12,6 +12,7 @@ As a web developer, I want to generate a webpage that displays my team's basic i
 
 ## Tests 
 ![Test](./screenshots/Capture.PNG)
+![Page](./screenshots/Capture2.PNG)
 
 ## Credits 
 Created By: Brent Albers

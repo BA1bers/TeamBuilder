@@ -20,3 +20,11 @@ body {
     padding-left: 800px;
 }
 
+.col-6 {
+    margin-top: 110px;
+    display: flex;
+}
+
+p {
+    font-size: x-large;
+}

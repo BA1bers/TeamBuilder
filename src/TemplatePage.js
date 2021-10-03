@@ -28,21 +28,16 @@ function createHtml(employees) {
                     <div class="card mx-auto mb-3" style="width: 20rem">
                         <h3 class="card-header">${manager.name}</h3>
                         <h4>Manager</h4>
-                    </div>
-
-                    <div class="card-body">
                         <p class="id">ID ${manager.id}</p>
                         <p class ="email">Email <a href="${manager.email}'>${manager.email}</a></p>
                         <p class="officeNum">Office Number: ${manager.officeNumber}</p>
                     </div>
                 </div>
+                
                 div class="col-6">
                     <div class="card mx-auto mb-3" style="width: 20rem">
                         <h3 class="card-header">${engineer.name}</h3>
                         <h4>Engineer</h4>
-                    </div>
-
-                    <div class="card-body">
                         <p class="id">ID ${engineer.id}</p>
                         <p class ="email">Email <a href="${engineer.email}'>${engineer.email}</a></p>
                         <p class="github">GitHub <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
@@ -53,9 +48,6 @@ function createHtml(employees) {
                     <div class="card mx-auto mb-3" style="width: 20rem">
                         <h3 class="card-header">${intern.name}</h3>
                         <h4>Intern</h4>
-                    </div>
-
-                    <div class="card-body">
                         <p class="id">ID ${intern.id}</p>
                         <p class ="email">Email <a href="${intern.email}'>${intern.email}</a></p>
                         <p class="school">School ${intern.school}</p>
