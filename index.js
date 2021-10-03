@@ -1,5 +1,6 @@
 // import inquirer package
 const inquirer = require('inquirer');
+const { prompt } = require('inquirer');
 const fs = require('fs');
 const generateHtmlTemplate = require('./src/TemplatePage');
 
@@ -7,6 +8,7 @@ const generateHtmlTemplate = require('./src/TemplatePage');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const Employee = require('./lib/Employee');
 
 const employees = [];
 
@@ -234,6 +236,13 @@ function addEmployees() {
             fs.copyFileSync("./dist/style.css");
         }
     });
+}
+
+function createHtml(employees) {
+    let teamMemberCards = "";
+    employees.forEach(employee => {
+        let title = "";
+    })
 }
 
 askQuestions();

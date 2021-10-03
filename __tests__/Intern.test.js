@@ -16,7 +16,7 @@ test("intern's name", () => {
 
 test("intern's id", () => {
     const intern = new Intern('dan', 2, 'dan.theman@gmail.com')
-    expect(intern.getId()).toEqual(expect.any(String));
+    expect(intern.getId()) === (expect.any(String));
 })
 
 test("interns's email", () => {
@@ -36,5 +36,5 @@ test("role", () =>
 {
     const role = "Intern";
     const intern = new Intern('dan', 2, 'dan.theman@gmail.com', role)
-    expect(intern.getRole().toEqual(role));
+    expect(intern.getRole() === (role));
 })

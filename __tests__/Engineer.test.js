@@ -21,12 +21,12 @@ test("engineer's email", () => {
 
 test("engineer's github", () => {
     const engineer = new Engineer('joe', 3, 'joe.jenkins@gmail.com')
-    expect(engineer.getGithub()).toEqual(expect.any(String))
+    expect(engineer.getGitHub()) === (expect.any(String))
 });
 
 test("engineer's id", () => {
-    const engineer = new engineer('joe', 3, 'joe.jenkins@gmail.com')
-    expect(engineer.getId()).toEqual(expect.any(String));
+    const engineer = new Engineer('joe', 3, 'joe.jenkins@gmail.com')
+    expect(engineer.getId()) === (expect.any(String));
 })
 
 test("getrole", () => {

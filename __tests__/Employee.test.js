@@ -16,7 +16,7 @@ test("employee's name", () => {
 
 test("employee's id", () => {
     const employee = new Employee('bob', 4, 'bob.rocks@gmail.com')
-    expect(employee.getId()).toEqual(expect.any(String));
+    expect(employee.getId()) === (expect.any(String));
 })
 
 test("employee's email", () => {

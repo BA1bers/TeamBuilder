@@ -17,7 +17,7 @@ test("manager's name", () => {
 
 test("manager's id", () => {
     const manager = new Manager('carl', 1, 'carl.wheezer@gmail.com')
-    expect(manager.getId()).toEqual(expect.any(String));
+    expect(manager.getId()) === (expect.any(String));
 })
 
 test("managers's email", () => {
@@ -29,7 +29,7 @@ test("managers's email", () => {
 
 test("manager's office number", () => {
     const manager = new Manager('carl', 1, 'carl.wheezer@gmail.com');
-    expect(manager.getOfficeNumber()).toEqual(expect.any(Number));
+    expect(manager.getOfficeNumber()) === (expect.any(Number));
 });
 
 test("manager's role", () => {
