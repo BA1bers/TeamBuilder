@@ -229,9 +229,9 @@ function addEmployees() {
             const employeeHTML =
                 initHtml();
 
-            const writeHTML = buildHtml(employeeHTML);
-            writeFile("./dist", "index.html", writeHTML);
-            fs.copyFileSync("./src/style.css", "./dist/style.css");
+            const writeHTML = createHtml(employeeHTML);
+            writeFile("./dist/index.html", writeHTML);
+            fs.copyFileSync("./dist/style.css");
         }
     });
 }
