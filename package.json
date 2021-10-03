@@ -7,9 +7,9 @@
         "lib": "lib"
     },
     "scripts": {
-        "test":  "jest --verbose test/*"
+        "test": "jest --verbose test/*"
     },
-    "repository":{
+    "repository": {
         "type": "git",
         "url": "git+https://github.com/BA1bers/TeamBuilder.git"
     },
