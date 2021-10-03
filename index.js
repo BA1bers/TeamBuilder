@@ -190,7 +190,7 @@ const addTeamMember = [
 ];
 
 function askQuestions() {
-    prompt(managerQuestions).then((data) => {
+    prompt(inputManager).then((data) => {
         const manager = new Manager(
             data.name,
             data.id,
@@ -203,7 +203,7 @@ function askQuestions() {
 }
 
 function addEngineer() {
-    prompt(engineerQuestions).then((data) => {
+    prompt(inputEngineer).then((data) => {
         const engineer = new Engineer(data.name, data.id, data.email, data.github);
         teamArry.push(engineer);
         return addEmployees();
@@ -211,7 +211,7 @@ function addEngineer() {
 }
 
 function addIntern() {
-    prompt(internQuestions).then((data) => {
+    prompt(inputIntern).then((data) => {
         const intern = new Intern(data.name, data.id, data.email, data.school);
         teamArry.push(intern);
         return addEmployees();
